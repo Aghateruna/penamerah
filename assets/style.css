@@ -1,39 +1,69 @@
+/* ===== RESET DASAR ===== */
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   background: #f4f4f4;
   color: #222;
 }
 
+/* ===== HEADER ===== */
 header {
   background: #8b0000;
-  padding: 12px 20px;
+  padding: 14px 24px;
   display: flex;
   align-items: center;
 }
 
+/* LOGO */
 header img {
-  height: 80px;
-  margin-right: 20px;
+  height: 96px;          /* LOGO BESAR */
+  margin-right: 24px;
 }
 
+/* NAVIGASI */
 header nav a {
-  color: #fff;
+  color: #ffffff;
   text-decoration: none;
-  margin-right: 15px;
-  font-size: 15px;
+  margin-right: 18px;
+  font-size: 14px;       /* MENU TIDAK BESAR */
+  font-weight: 500;
 }
 
+header nav a:hover {
+  text-decoration: underline;
+}
+
+/* ===== KONTEN UTAMA ===== */
 main {
   max-width: 900px;
-  margin: 20px auto;
-  background: #fff;
-  padding: 20px;
+  margin: 24px auto;
+  background: #ffffff;
+  padding: 24px;
 }
 
+/* JUDUL */
+main h1 {
+  font-size: 28px;
+  margin-bottom: 12px;
+}
+
+main h2 {
+  font-size: 20px;
+  margin-top: 28px;
+  margin-bottom: 10px;
+}
+
+/* PARAGRAF & LIST */
+main p,
+main li {
+  font-size: 15px;       /* TEKS NORMAL (TIDAK BESAR) */
+  line-height: 1.7;
+}
+
+/* ===== FOOTER ===== */
 footer {
   text-align: center;
-  font-size: 14px;
+  font-size: 13px;
   color: #666;
   padding: 20px;
 }
