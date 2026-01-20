@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Polresta Bandung Sita 2 Juta Obat Terlarang</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header>
+  <img src="assets/logo.png" alt="Logo Penamerah">
+  <nav>
+    <a href="index.html">Beranda</a>
+    <a href="#">Investigasi</a>
+    <a href="#">Laporan</a>
+    <a href="redaksi.html">Redaksi</a>
+  </nav>
+</header>
+
+<main>
+  <h1>Polresta Bandung Sita 2 Juta Obat Terlarang</h1>
+  <p><strong>Penamerah, Bandung — 30 Mei 2025</strong></p>
+
+  <p>
+    Satuan Reserse Narkoba Polresta Bandung berhasil menyita sekitar 2 juta butir obat terlarang dari 94 tersangka pria dan wanita yang ditangkap dalam berbagai operasi penertiban sejak awal tahun. 6
+  </p>
+
+  <p>
+    Barang bukti yang disita meliputi obat keras seperti tramadol, trihexyphenidyl, dan dextrometropan. Para pelaku melakukan praktik peredaran di berbagai lokasi, termasuk kios-kios kecil yang berpindah-pindah dan menjadi tantangan besar bagi aparat penegak hukum. 7
+  </p>
+
+  <p>
+    Operasi berkelanjutan dari kepolisian menunjukkan komitmen kuat dalam memberantas peredaran obat-obatan ilegal demi keamanan publik di Kota Bandung.
+  </p>
+</main>
+
+<footer>
+  © 2026 Penamerah • Media Redaksi Independen
+</footer>
+
+</body>
+</html>
