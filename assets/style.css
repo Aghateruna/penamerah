@@ -9,23 +9,24 @@ body {
 /* ===== HEADER ===== */
 header {
   background: #8b0000;
-  padding: 24px 36px;           /* header lebih tinggi */
+  padding: 24px 36px;           
   display: flex;
   align-items: center;
+  justify-content: flex-start;
 }
 
-/* LOGO – BESAR SEKALI */
+/* LOGO – BESAR DI DESKTOP */
 header img {
-  height: 150px;                 /* logo dominan */
+  height: 150px;                 
   margin-right: 40px;
 }
 
-/* MENU NAVIGASI – BESAR DAN TEBAL */
+/* MENU NAVIGASI – BESAR & TEBAL */
 header nav a {
   color: #ffffff;
   text-decoration: none;
   margin-right: 32px;
-  font-size: 22px;               /* menu jelas & menonjol */
+  font-size: 22px;               
   font-weight: 700;
 }
 
@@ -41,22 +42,22 @@ main {
   padding: 24px;
 }
 
-/* JUDUL – KECILKAN SEDIKIT */
+/* JUDUL – SEDIKIT KECILKAN UNTUK KESERAGAMAN */
 main h1 {
-  font-size: 20px;
+  font-size: 20px;             
   margin-bottom: 10px;
 }
 
 main h2 {
-  font-size: 16px;
+  font-size: 16px;             
   margin-top: 20px;
   margin-bottom: 8px;
 }
 
-/* PARAGRAF & LIST – KECILKAN SEDIKIT */
+/* PARAGRAF & LIST – NYAMAN DIBACA */
 main p,
 main li {
-  font-size: 13px;
+  font-size: 13px;             
   line-height: 1.6;
 }
 
@@ -66,4 +67,30 @@ footer {
   font-size: 12px;
   color: #666;
   padding: 20px;
+}
+
+/* ===== RESPONSIVE HEADER UNTUK HP ===== */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;      /* logo & menu jadi 2 baris */
+    align-items: flex-start;
+    padding: 16px 16px;
+  }
+
+  header img {
+    height: 100px;              /* logo lebih kecil di HP */
+    margin-right: 0;
+    margin-bottom: 12px;        /* beri jarak ke menu */
+  }
+
+  header nav {
+    width: 100%;
+  }
+
+  header nav a {
+    display: inline-block;
+    margin-right: 12px;
+    font-size: 18px;            /* menu nyaman di HP */
+    font-weight: 600;
+  }
 }
