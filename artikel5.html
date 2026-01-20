@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Siapa Itu Bos YOK?</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/style.css">
+  <style>
+    /* Slider / headline gambar */
+    .slider {
+      position: relative;
+      max-width: 100%;
+      margin-bottom: 20px;
+      border-radius: 6px;
+      overflow: hidden;
+    }
+    .slides img {
+      width: 100%;
+      display: none;
+      border-radius: 6px;
+      object-fit: cover;
+    }
+    .slides img.active {
+      display: block;
+    }
+
+    .publish-date {
+      font-size: 14px;
+      color: #7a0000;
+      margin: 5px 0 15px 0;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="header-top">
+    <img src="assets/logo.png" alt="Logo Penamerah" class="logo">
+    <nav>
+      <a href="index.html">Beranda</a>
+      <a href="investigasi.html">Investigasi</a>
+      <a href="laporan.html">Laporan</a>
+      <a href="redaksi.html">Redaksi</a>
+    </nav>
+  </div>
+  <div class="header-bottom">
+    <p>Email: redaksi@penamerah.publicvm.com</p>
+  </div>
+</header>
+
+<main>
+  <div class="content-wrapper">
+    <div class="articles">
+      
+      <h1>Siapa Itu Bos YOK?</h1>
+      <p class="publish-date">20 Januari 2026</p>
+
+      <!-- Slider Headline -->
+      <div class="slider">
+        <div class="slides">
+          <img src="assets/gambar_bosyok1.jpg" alt="Ilustrasi Bos YOK" class="active">
+          <img src="assets/gambar_bosyok2.jpg" alt="Ilustrasi Distribusi Obat">
+          <img src="assets/gambar_obat1.jpg" alt="Obat Terlarang">
+        </div>
+      </div>
+
+      <p>Di tengah maraknya peredaran obat-obatan terlarang di Kota Bandung, muncul nama yang kerap disebut-sebut sebagai pengendali utama, yaitu <strong>Bos YOK</strong>. Sosok ini digadang-gadang menjadi bos besar sekaligus pemimpin kartel yang mengatur distribusi obat-obatan terlarang di beberapa ruas kota Bandung.</p>
+
+      <p>Menurut sejumlah sumber yang berhasil dihubungi tim Penamerah, Bos YOK bukan hanya berperan sebagai <em>pemasok besar</em>, tetapi juga pengatur organisasi kartel yang tersusun rapi, dari pemasok kecil hingga penjual di warung dan toko kelontong. Aktivitasnya konon dilakukan dengan sistematis, sehingga sulit dijangkau aparat penegak hukum.</p>
+
+      <p>Beberapa pelaku lokal menyebut bahwa Bos YOK memiliki jaringan luas dan mampu mengontrol peredaran berbagai jenis obat keras terlarang, termasuk TRAMADOL, HEXYMER, dan TRIHEXYPENIDYL. Meski identitas aslinya tetap misterius, pengaruhnya terasa di hampir setiap titik yang menjadi jalur distribusi obat di Kota Bandung.</p>
+
+      <p>Tim Penamerah mendapati bahwa modus operandi kartel ini sangat tersentralisasi. Dari pusat koordinasi yang diduga dikendalikan Bos YOK, pergerakan obat, pengiriman, hingga penentuan harga di pasar gelap diatur secara sistematis. Hal ini membuat upaya penegakan hukum semakin kompleks, apalagi dengan dugaan adanya oknum yang mempermudah operasi ini.</p>
+
+      <p>Meski informasi mengenai Bos YOK sebagian besar berasal dari sumber anonim, keberadaannya sudah menjadi perhatian masyarakat dan aparat. Banyak warga berharap pihak kepolisian dan lembaga terkait segera menelusuri jaringan ini agar peredaran obat ilegal bisa ditekan dan keamanan masyarakat terjaga.</p>
+
+      <a href="index.html" class="btn-hero">Kembali ke Beranda</a>
+
+    </div>
+
+    <aside class="sidebar">
+      <h3>Kategori</h3>
+      <ul>
+        <li><a href="investigasi.html">Investigasi</a></li>
+        <li><a href="laporan.html">Laporan</a></li>
+        <li><a href="#">Statistik</a></li>
+      </ul>
+    </aside>
+  </div>
+</main>
+
+<footer>
+  <div class="footer-bottom">
+    <p>© 2026 Penamerah • Redaksi Independen • Semua konten dilindungi hak cipta</p>
+  </div>
+</footer>
+
+<script>
+  // Slider otomatis
+  const slides = document.querySelectorAll('.slides img');
+  let currentIndex = 0;
+
+  setInterval(() => {
+    slides[currentIndex].classList.remove('active');
+    currentIndex = (currentIndex + 1) % slides.length;
+    slides[currentIndex].classList.add('active');
+  }, 4000);
+</script>
+
+</body>
+</html>
