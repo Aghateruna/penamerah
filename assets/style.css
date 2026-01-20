@@ -9,8 +9,25 @@ header nav a { color: #fff; text-decoration: none; margin-left: 15px; font-weigh
 header nav a:hover { text-decoration: underline; }
 .logo { height: auto; max-height: 50px; max-width: 130px; }
 
-/* Header bottom / kontak */
-.header-bottom { text-align: center; color: #fff; font-size: 13px; margin-top: 10px; }
+/* Header bottom / kontak bergerak horizontal */
+.header-bottom {
+  overflow: hidden;
+  white-space: nowrap;
+  background: #7a0000;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 5px 0;
+}
+.header-bottom p {
+  display: inline-block;
+  padding-left: 100%;
+  animation: scroll-left 15s linear infinite;
+}
+@keyframes scroll-left {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-100%); }
+}
 
 /* Hero Section */
 .hero { background: #8b0000; color: #fff; padding: 40px 20px; text-align: center; border-radius: 6px; margin: 20px 0; }
@@ -43,11 +60,11 @@ footer { background: #222; color: #fff; padding: 20px; text-align: center; margi
 @media(max-width: 768px) {
   .header-top { flex-direction: column; align-items: flex-start; }
   .logo { max-height: 40px; }
-  .header-bottom { margin-top: 5px; font-size: 12px; }
   .content-wrapper { flex-direction: column; }
   .sidebar { margin-left: 0; margin-top: 20px; }
   .hero { padding: 30px 15px; }
   .hero h1 { font-size: 20px; }
   .btn-hero { padding: 6px 12px; font-size: 13px; }
   .card { padding: 15px; max-width: 100%; }
+  .header-bottom p { font-size: 11px; animation-duration: 20s; }
 }
