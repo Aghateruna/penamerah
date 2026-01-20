@@ -9,24 +9,24 @@ body {
 /* ===== HEADER ===== */
 header {
   background: #8b0000;
-  padding: 18px 28px;          /* HEADER LEBIH TEBAL */
+  padding: 22px 32px;          /* HEADER lebih tebal */
   display: flex;
   align-items: center;
 }
 
-/* LOGO – DIBESARKAN */
+/* LOGO – BESAR SEKALI */
 header img {
-  height: 110px;               /* INI KUNCI UTAMA */
-  margin-right: 32px;
+  height: 130px;               /* BESAR & DOMINAN */
+  margin-right: 36px;
 }
 
-/* MENU NAVIGASI – DIBESARKAN */
+/* MENU NAVIGASI – BESAR DAN TEBAL */
 header nav a {
   color: #ffffff;
   text-decoration: none;
-  margin-right: 26px;
-  font-size: 18px;             /* MENU JELAS & DOMINAN */
-  font-weight: 600;
+  margin-right: 30px;
+  font-size: 20px;             /* JELAS & DOMINAN */
+  font-weight: 700;
 }
 
 header nav a:hover {
@@ -41,29 +41,29 @@ main {
   padding: 24px;
 }
 
-/* JUDUL */
+/* JUDUL – SEDIKIT KECILKAN */
 main h1 {
-  font-size: 28px;
-  margin-bottom: 12px;
-}
-
-main h2 {
-  font-size: 20px;
-  margin-top: 28px;
+  font-size: 24px;             /* SEDIKIT KECIL */
   margin-bottom: 10px;
 }
 
-/* PARAGRAF & LIST */
+main h2 {
+  font-size: 18px;             /* SEDIKIT KECIL */
+  margin-top: 24px;
+  margin-bottom: 8px;
+}
+
+/* PARAGRAF & LIST – KECILKAN */
 main p,
 main li {
-  font-size: 15px;
-  line-height: 1.7;
+  font-size: 14px;             /* NYAMAN DIBACA */
+  line-height: 1.6;
 }
 
 /* ===== FOOTER ===== */
 footer {
   text-align: center;
-  font-size: 13px;
+  font-size: 12px;
   color: #666;
   padding: 20px;
 }
