@@ -9,24 +9,24 @@ body {
 /* ===== HEADER ===== */
 header {
   background: #8b0000;
-  padding: 14px 24px;
+  padding: 18px 28px;          /* HEADER LEBIH TEBAL */
   display: flex;
   align-items: center;
 }
 
-/* LOGO */
+/* LOGO – DIBESARKAN */
 header img {
-  height: 96px;          /* LOGO BESAR */
-  margin-right: 24px;
+  height: 110px;               /* INI KUNCI UTAMA */
+  margin-right: 32px;
 }
 
-/* NAVIGASI */
+/* MENU NAVIGASI – DIBESARKAN */
 header nav a {
   color: #ffffff;
   text-decoration: none;
-  margin-right: 18px;
-  font-size: 14px;       /* MENU TIDAK BESAR */
-  font-weight: 500;
+  margin-right: 26px;
+  font-size: 18px;             /* MENU JELAS & DOMINAN */
+  font-weight: 600;
 }
 
 header nav a:hover {
@@ -56,7 +56,7 @@ main h2 {
 /* PARAGRAF & LIST */
 main p,
 main li {
-  font-size: 15px;       /* TEKS NORMAL (TIDAK BESAR) */
+  font-size: 15px;
   line-height: 1.7;
 }
 
