@@ -6,101 +6,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="assets/style.css">
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #fff;
-      color: #333;
-    }
-
-    header {
-      background-color: #b71c1c;
-      color: #fff;
-      padding: 10px 20px;
-    }
-    .header-top {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      flex-wrap: wrap;
-    }
-    .header-top .logo {
-      height: 50px;
-    }
-    nav a {
-      color: #fff;
-      margin-left: 15px;
-      text-decoration: none;
-      font-weight: 600;
-    }
-    .header-bottom {
-      margin-top: 5px;
-      font-size: 14px;
-    }
-
-    main {
-      max-width: 800px;
-      margin: 20px auto;
-      padding: 0 15px;
-    }
-
-    h1 {
-      font-size: 24px;
-      margin-bottom: 5px;
-    }
-
-    .publish-date {
-      font-size: 14px;
-      color: #7a0000;
-      margin-bottom: 15px;
-      font-weight: 600;
-    }
-
-    p {
-      line-height: 1.6;
-      margin-bottom: 15px;
-    }
-
+    /* Slider */
     .slider {
       position: relative;
       max-width: 100%;
       margin-bottom: 20px;
       border-radius: 6px;
       overflow: hidden;
-      height: 300px;
     }
     .slides img {
       width: 100%;
-      height: 100%;
-      object-fit: cover;
       display: none;
       border-radius: 6px;
+      object-fit: cover;
     }
     .slides img.active {
       display: block;
     }
 
-    footer {
-      background-color: #333;
-      color: #fff;
-      text-align: center;
-      padding: 15px 0;
-      margin-top: 30px;
+    /* Tanggal artikel */
+    .publish-date {
       font-size: 14px;
-    }
-
-    @media (max-width: 600px) {
-      h1 {
-        font-size: 20px;
-      }
-      .slider {
-        height: 200px;
-      }
-      nav a {
-        margin-left: 10px;
-        font-size: 14px;
-      }
+      color: #7a0000;
+      margin: 5px 0 15px 0;
+      font-weight: 600;
     }
   </style>
 </head>
@@ -122,39 +51,57 @@
 </header>
 
 <main>
-  <h1>Peredaran Obat Keras Terlarang di Ayam Bakar KQ5 Ujung Berung Bandung</h1>
-  <p class="publish-date">20 Januari 2026</p>
+  <div class="content-wrapper">
+    <div class="articles">
+      
+      <h1>Peredaran Obat Keras Terlarang di Ayam Bakar KQ5 Ujung Berung Bandung</h1>
+      <p class="publish-date">20 Januari 2026</p>
 
-  <div class="slider">
-    <div class="slides">
-      <img src="assets/gambar_toko2.jpg" alt="Foto Toko" class="active">
-      <img src="assets/gambar_polisi.jpg" alt="Polisi sedang wawancara">
-      <img src="assets/gambar_obat.jpg" alt="Obat TRAMADOL">
+      <!-- Slider Headline -->
+      <div class="slider">
+        <div class="slides">
+          <img src="assets/gambar_toko2.jpg" alt="Foto Toko Ayam Bakar KQ5" class="active">
+          <img src="assets/gambar_polisi.jpg" alt="Polisi sedang wawancara">
+          <img src="assets/gambar_obat.jpg" alt="Obat TRAMADOL">
+        </div>
+      </div>
+
+      <p>Seperti tidak ada habisnya, peredaran Obat Keras Terlarang seperti <strong>TRAMADOL</strong>, <strong>HEXYMER</strong>, dan <strong>TRIHEXYPENIDYL</strong> di Kota Bandung seakan sulit ditebas. Pasalnya tim kerap menjumpai toko-toko kelontong yang masih menjajalkan barang ilegal tersebut, dengan modus operandi yang seakan menjadi rahasia umum. Para muda-mudi seolah leluasa membeli barang tersebut, padahal hal ini melanggar hukum, seperti diatur dalam Undang-Undang Kesehatan No.179 dan Pasal 56 Undang-Undang No.35 tentang psikotropika.</p>
+
+      <p>Seperti sebuah warung yang dijumpai tim di Ayam Bakar KQ5, Ujung Berung, Jl. AH. Nasution No.223e, Kota Bandung, warung tersebut berkamuflase menjadi warung kelontong pada umumnya. Namun terdapat hal-hal janggal yang menyita perhatian kami; segelintir anak muda hilir mudik mendatangi toko tersebut sambil menenteng beberapa lembar benda menyerupai bungkus obat. Setelah didalami, rupanya obat tersebut adalah TRAMADOL yang bisa mereka peroleh seharga Rp. 50.000.</p>
+
+      <p>Warung tersebut menyediakan beberapa jenis obat keras golongan daftar G seperti TRAMADOL, HEXYMER, dan TRIHEXYPENIDYL tanpa resep dokter maupun legalitas lain, semakin menggambarkan betapa ironisnya peredaran obat yang seharusnya dipantau ketat oleh para pakar di bidangnya. Justru dapat dijual bebas secara terang-terangan.</p>
+
+      <p>Terdapat hal ironis lain yang tim dapati ketika menanyakan aktivitas ilegal warung ini kepada warga sekitar, yang menyatakan peredaran obat ilegal ini konon diduga didukung oleh oknum Aparat, seperti oknum TNI berinisial Y dan Z. Kedua oknum tersebut diduga menjadi dalang keberlangsungan aktifitas warung tersebut sehingga tidak bisa disentuh hukum. Pemilik toko diduga berinisial R, pemuda asal Provinsi Aceh.</p>
+
+      <p>Apabila hal ini benar, maka aktifitas tersebut harus segera mendapatkan perhatian dan penindakan khusus dari penegak hukum di Kota Bandung. Kegiatan ini terorganisir dengan upaya tipikor seperti menyuap oknum yang tidak mementingkan kepentingan tumbuh kembang anak bangsa. Oleh karena itu, pihak Kepolisian serta Polisi Militer diharapkan memberi atensi penuh dan segera menyelidiki hal ini karena mencederai norma sosial dan kredibilitas masyarakat terhadap instansi pemerintahan.</p>
+
+      <a href="index.html" class="btn-hero">Kembali ke Beranda</a>
+
     </div>
+
+    <aside class="sidebar">
+      <h3>Kategori</h3>
+      <ul>
+        <li><a href="investigasi.html">Investigasi</a></li>
+        <li><a href="laporan.html">Laporan</a></li>
+        <li><a href="#">Statistik</a></li>
+      </ul>
+    </aside>
   </div>
-
-  <p>Seperti tidak ada habisnya, peredaran Obat Keras Terlarang seperti <strong>TRAMADOL</strong>, <strong>HEXYMER</strong> dan <strong>TRIHEXYPENIDYL</strong> di Kota Bandung seakan sulit ditebas.</p>
-
-  <p>Pasalnya tim kerap menjumpai toko-toko kelontong yang masih menjajalkan barang ilegal tersebut, dengan modus operandi yang seakan menjadi rahasia umum. Para muda-mudi seolah leluasa membeli barang tersebut, padahal hal ini melanggar hukum, seperti diatur dalam Undang-Undang Kesehatan No.179 dan Pasal 56 Undang-Undang No.35 tentang psikotropika.</p>
-
-  <p>Seperti sebuah warung yang dijumpai tim di <strong>Ayam Bakar KQ5, Ujung Berung, Jl. AH. Nasution No.223e, Kota Bandung</strong>, warung tersebut berkamuflase menjadi warung kelontong pada umumnya. Namun terdapat hal-hal janggal yang menyita perhatian kami; segelintir anak muda hilir mudik mendatangi toko tersebut sambil menenteng beberapa lembar benda menyerupai bungkus obat. Setelah didalami, rupanya obat tersebut adalah TRAMADOL yang bisa mereka peroleh seharga Rp. 50.000.</p>
-
-  <p>Warung tersebut menyediakan beberapa jenis obat keras golongan daftar G seperti TRAMADOL, HEXYMER dan TRIHEXYPENIDYL tanpa resep dokter maupun legalitas lain, semakin menggambarkan betapa ironisnya peredaran obat yang seharusnya dipantau ketat oleh para pakar di bidangnya, justru dapat dijual bebas secara terang-terangan.</p>
-
-  <p>Terdapat hal ironis lain yang tim dapati ketika menanyakan aktivitas ilegal warung ini kepada warga sekitar, yang menyatakan peredaran obat ilegal ini konon diduga didukung oleh oknum Aparat seperti dari oknum TNI berinisial Y dan Z. Kedua oknum tersebut diduga menjadi dalang keberlangsungan aktifitas warung sehingga tidak bisa disentuh hukum, dan kerap terlihat beberapa mobil dinas mampir ke toko tersebut. Pemilik toko diduga berinisial R, pemuda asal Provinsi Aceh.</p>
-
-  <p>Apabila hal ini benar, maka aktifitas tersebut harus segera mendapatkan perhatian dan penindakan khusus dari penegak hukum di Kota Bandung. Kegiatan ini terorganisir dengan upaya tipikor seperti menyuap oknum yang tidak mementingkan kepentingan tumbuh kembang anak bangsa. Oleh karena itu, pihak Kepolisian serta Polisi Militer diharapkan memberi atensi penuh dan segera menyelidiki hal ini karena mencederai norma sosial dan kredibilitas masyarakat terhadap instansi pemerintahan.</p>
-
-  <a href="index.html" class="btn-hero">Kembali ke Beranda</a>
 </main>
 
 <footer>
-  <p>© 2026 Penamerah • Redaksi Independen • Semua konten dilindungi hak cipta</p>
+  <div class="footer-bottom">
+    <p>© 2026 Penamerah • Redaksi Independen • Semua konten dilindungi hak cipta</p>
+  </div>
 </footer>
 
 <script>
+  // Slider otomatis
   const slides = document.querySelectorAll('.slides img');
   let currentIndex = 0;
+
   setInterval(() => {
     slides[currentIndex].classList.remove('active');
     currentIndex = (currentIndex + 1) % slides.length;
