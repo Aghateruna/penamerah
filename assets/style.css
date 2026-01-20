@@ -9,23 +9,23 @@ body {
 /* ===== HEADER ===== */
 header {
   background: #8b0000;
-  padding: 22px 32px;          /* HEADER lebih tebal */
+  padding: 24px 36px;           /* header lebih tinggi */
   display: flex;
   align-items: center;
 }
 
 /* LOGO – BESAR SEKALI */
 header img {
-  height: 130px;               /* BESAR & DOMINAN */
-  margin-right: 36px;
+  height: 150px;                 /* logo dominan */
+  margin-right: 40px;
 }
 
 /* MENU NAVIGASI – BESAR DAN TEBAL */
 header nav a {
   color: #ffffff;
   text-decoration: none;
-  margin-right: 30px;
-  font-size: 20px;             /* JELAS & DOMINAN */
+  margin-right: 32px;
+  font-size: 22px;               /* menu jelas & menonjol */
   font-weight: 700;
 }
 
@@ -41,22 +41,22 @@ main {
   padding: 24px;
 }
 
-/* JUDUL – SEDIKIT KECILKAN */
+/* JUDUL – KECILKAN SEDIKIT */
 main h1 {
-  font-size: 24px;             /* SEDIKIT KECIL */
+  font-size: 20px;
   margin-bottom: 10px;
 }
 
 main h2 {
-  font-size: 18px;             /* SEDIKIT KECIL */
-  margin-top: 24px;
+  font-size: 16px;
+  margin-top: 20px;
   margin-bottom: 8px;
 }
 
-/* PARAGRAF & LIST – KECILKAN */
+/* PARAGRAF & LIST – KECILKAN SEDIKIT */
 main p,
 main li {
-  font-size: 14px;             /* NYAMAN DIBACA */
+  font-size: 13px;
   line-height: 1.6;
 }
 
