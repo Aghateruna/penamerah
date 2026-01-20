@@ -5,6 +5,129 @@
   <title>Penamerah – Redaksi Independen, Berita Peredaran Obat Terlarang di Bandung</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="assets/style.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fff;
+      color: #333;
+    }
+
+    header {
+      background-color: #b71c1c;
+      color: #fff;
+      padding: 10px 20px;
+    }
+    .header-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    .header-top .logo {
+      height: 50px;
+    }
+    nav a {
+      color: #fff;
+      margin-left: 15px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .header-bottom {
+      margin-top: 5px;
+      font-size: 14px;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 20px auto;
+      padding: 0 15px;
+    }
+
+    h1 {
+      font-size: 24px;
+      margin-bottom: 5px;
+    }
+
+    .publish-date {
+      font-size: 14px;
+      color: #7a0000;
+      margin-bottom: 15px;
+      font-weight: 600;
+    }
+
+    p {
+      line-height: 1.6;
+      margin-bottom: 15px;
+    }
+
+    .slider {
+      position: relative;
+      max-width: 100%;
+      margin-bottom: 30px;
+      border-radius: 6px;
+      overflow: hidden;
+      height: 300px;
+    }
+    .slides img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: none;
+      border-radius: 6px;
+    }
+    .slides img.active {
+      display: block;
+    }
+
+    .latest-articles {
+      margin-top: 20px;
+    }
+    .latest-articles h2 {
+      font-size: 22px;
+      margin-bottom: 15px;
+    }
+    .card {
+      border: 1px solid #ddd;
+      padding: 15px;
+      border-radius: 6px;
+      margin-bottom: 15px;
+      transition: box-shadow 0.3s;
+    }
+    .card:hover {
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .card h3 {
+      margin-top: 0;
+      font-size: 18px;
+    }
+    .card p {
+      margin-bottom: 0;
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 30px;
+      font-size: 14px;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 20px;
+      }
+      .slider {
+        height: 200px;
+      }
+      nav a {
+        margin-left: 10px;
+        font-size: 14px;
+      }
+    }
+  </style>
 </head>
 <body>
 
@@ -24,6 +147,14 @@
 </header>
 
 <main>
+  <div class="slider">
+    <div class="slides">
+      <img src="assets/gambar_toko1.jpg" alt="Toko Arcamanik" class="active">
+      <img src="assets/gambar_toko2.jpg" alt="Toko Ayam Bakar KQ5">
+      <img src="assets/gambar_toko4.jpg" alt="Toko Lainnya / Investigasi Terbaru">
+    </div>
+  </div>
+
   <h1>Selamat Datang di Penamerah</h1>
   <p>Redaksi Independen yang membahas isu sosial dan peredaran obat terlarang di Kota Bandung.</p>
 
@@ -52,6 +183,16 @@
 <footer>
   <p>© 2026 Penamerah • Redaksi Independen • Semua konten dilindungi hak cipta</p>
 </footer>
+
+<script>
+  const slides = document.querySelectorAll('.slides img');
+  let currentIndex = 0;
+  setInterval(() => {
+    slides[currentIndex].classList.remove('active');
+    currentIndex = (currentIndex + 1) % slides.length;
+    slides[currentIndex].classList.add('active');
+  }, 4000);
+</script>
 
 </body>
 </html>
