@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Aktivitas Peredaran Obat Terlarang Diduga Masih Berlangsung di Cisaranten</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/style.css">
+  <style>
+    /* Slider */
+    .slider {
+      position: relative;
+      max-width: 100%;
+      margin-bottom: 20px;
+      border-radius: 6px;
+      overflow: hidden;
+    }
+    .slides img {
+      width: 100%;
+      display: none;
+      border-radius: 6px;
+      object-fit: cover;
+    }
+    .slides img.active {
+      display: block;
+    }
+
+    /* Tanggal artikel */
+    .publish-date {
+      font-size: 14px;
+      color: #7a0000;
+      margin: 5px 0 15px 0;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="header-top">
+    <img src="assets/logo.png" alt="Logo Penamerah" class="logo">
+    <nav>
+      <a href="index.html">Beranda</a>
+      <a href="investigasi.html">Investigasi</a>
+      <a href="laporan.html">Laporan</a>
+      <a href="redaksi.html">Redaksi</a>
+    </nav>
+  </div>
+  <div class="header-bottom">
+    <p>Email: redaksi@penamerah.publicvm.com</p>
+  </div>
+</header>
+
+<main>
+  <div class="content-wrapper">
+    <div class="articles">
+      
+      <h1>Aktivitas Peredaran Obat Terlarang Diduga Masih Berlangsung di Cisaranten</h1>
+      <p class="publish-date">20 Januari 2026</p>
+
+      <!-- Slider Headline -->
+      <div class="slider">
+        <div class="slides">
+          <img src="assets/gambar_toko3.jpg" alt="Lokasi Cisaranten" class="active">
+          <img src="assets/gambar_polisi.jpg" alt="Aparat di lapangan">
+          <img src="assets/gambar_obat1.jpg" alt="Obat Terlarang">
+        </div>
+      </div>
+
+      <p>Sejumlah titik di Kota Bandung diketahui masih menunjukkan aktivitas yang diduga berkaitan dengan peredaran obat keras terlarang, meskipun upaya penertiban tengah dilakukan oleh aparat penegak hukum.</p>
+
+      <p>Di tengah intensitas kegiatan Polrestabes Bandung dalam membersihkan peredaran obat ilegal, tim menemukan adanya indikasi aktivitas yang masih berlangsung di wilayah Cisaranten Wetan. Aktivitas tersebut terpantau berlangsung secara terbuka dengan pola yang relatif konsisten.</p>
+
+      <p>Menurut pengamatan di lapangan, lokasi yang diduga menjadi titik transaksi berada di sekitar pertigaan Cisaranten, dengan modus yang terbilang sederhana. Beberapa individu terlihat berkumpul di sebuah lapak kaki lima dengan gerobak kosong, yang sekilas tampak seperti tempat istirahat biasa. Namun, dari pergerakan dan interaksi yang terjadi, muncul dugaan adanya aktivitas lain di baliknya.</p>
+
+      <p>Beberapa sumber di sekitar lokasi menyebutkan bahwa aktivitas tersebut diduga melibatkan penjualan obat jenis TRAMADOL. Nama yang disebut-sebut terkait aktivitas ini antara lain seorang penjual berinisial M, serta sosok yang dikenal dengan sebutan Bos Dani yang diduga memiliki peran lebih besar dalam distribusi.</p>
+
+      <p>Selain itu, terdapat pula informasi dari warga yang menyebutkan adanya dugaan keterlibatan oknum tertentu yang kerap terlihat berada di lokasi tersebut. Meski demikian, informasi ini masih memerlukan pendalaman lebih lanjut dan belum dapat dipastikan kebenarannya secara menyeluruh.</p>
+
+      <p>Keberadaan aktivitas semacam ini tentu menimbulkan kekhawatiran di tengah masyarakat, terutama karena berlangsung di ruang publik dan berdekatan dengan aktivitas warga sehari-hari. Diperlukan perhatian serta penelusuran lebih lanjut dari pihak berwenang guna memastikan kondisi di lapangan serta mengambil langkah yang diperlukan.</p>
+
+      <p>Masyarakat berharap upaya penertiban dapat dilakukan secara menyeluruh, sehingga peredaran obat keras ilegal dapat ditekan dan lingkungan tetap aman bagi semua pihak.</p>
+
+      <a href="index.html" class="btn-hero">Kembali ke Beranda</a>
+
+    </div>
+
+    <aside class="sidebar">
+      <h3>Kategori</h3>
+      <ul>
+        <li><a href="investigasi.html">Investigasi</a></li>
+        <li><a href="laporan.html">Laporan</a></li>
+        <li><a href="#">Statistik</a></li>
+      </ul>
+    </aside>
+  </div>
+</main>
+
+<footer>
+  <div class="footer-bottom">
+    <p>© 2026 Penamerah • Redaksi Independen • Semua konten dilindungi hak cipta</p>
+  </div>
+</footer>
+
+<script>
+  // Slider otomatis
+  const slides = document.querySelectorAll('.slides img');
+  let currentIndex = 0;
+
+  setInterval(() => {
+    slides[currentIndex].classList.remove('active');
+    currentIndex = (currentIndex + 1) % slides.length;
+    slides[currentIndex].classList.add('active');
+  }, 4000);
+</script>
+
+</body>
+</html>
